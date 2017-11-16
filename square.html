@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>square</title>
+	<script type="text/javascript">
+	function square()
+	{
+			var n=prompt(" enter the value for n");	
+			var res = 0;
+			var msg = " ";
+			if(!isNaN(n))
+			{
+				res = n * n;
+				msg = msg + "Square of " + n + " is " + res;
+				alert(msg);
+				square();
+					
+			}
+			else
+			{
+					alert("Enter a digit\n");
+					square();
+			}		
+				
+	}
+	
+	
+	</script>
+</head>
+<body style="background-color:Orange" onload="square()" >
+</body>
+</html>
+
